@@ -1,0 +1,50 @@
+---
+title: "aX"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("analysis.R")
+```
+
+## Introduction
+
+My time series dataset contains over 80,000 reports of UFO sightings over the last century. 
+It was collected by the National UFO Reporting  Center (NUFORC). The dataset was scraped,
+geolocated and time standardized from NUFORC data by Sigmond Axel. It has more than a 
+century of information from the NUFORC. Earliest reports date back to the 20th century,
+however the older data might be obscurbed. The data set contains city, state, time, 
+descrption, duration, comments if applicable, and exact longitude and latitude of each
+sighting. The data was collected to track inter-dimensional or inter-stellar contact
+in this context to potentially influence societal perspectives and values. This dataset
+helps track reported UFO sightings around the world and clock. The dataframe was published
+in 2014 by Sigmond Axel using National UFO Reporting Center (NUFORC) on Kabble.
+
+## Data Graphics
+
+This bar graph shows the number of UFO sightings reported in the data set by state. Each state is represented using its abbreviations, for example, "ca" represents California. The chart is organized where the number of occurrences by state is arranged in descending order.
+
+```{r, warning = FALSE, echo = FALSE}
+occurrences_by_state
+```
+
+## Discussion
+
+Stakeholders that are impacted by this data include scientists and people who are interested in extra-terrestrial life. It could be used to do good in the world by figuring out what other
+common causes are in line with these UFO sightings. Since there is not much knowledge surrounding
+extra-terrestrial life, we can use this data to potentially learn more about the universe outside
+our own and potentially gain valuable knowledge from such life. 
+
+From my graph, I can also conclude that California, Washington and Florida have the most ufo 
+sightings. This was news to me as coming into this project, I totally thought Utah and New Mexico especially would be in the top three reported occurrences, just due to the fact that I feel like
+Utah and New Mexico are often associated with extra-terrestrial life in popular news and media. 
+
+This data is definitely more informative and I feel that compared to other datasets, it has less potential to be used in a negative manner. This is due to the fact that UFO sightings have not been correlated or associated with any negative outcomes such as violence or the like. I feel society can use this data as a means to further space exploration and endeavors as they can focus their efforts in states that have many reported ufo sightings such as California, Florida and Washington. Potentially, this information could lead to the set up of space exploration bases in such states and locations. 
+
+## Reflection
+
+Overall, I learned that the field of data analysis can be done in fun ways! There is so much data out there that I really feel like this field was made for everybody. No matter what you're interested in, I feel that you're bound to find data that will interest you and encourage you to dissect and investigate it like I have all quarter. From out of this world datasets like this one to ones that directly may impact the people you hold dear to your heart, the boundaries of data science are really nonexistent. Some new questions I have after investigating this data is: how have attitudes towards ufo sightings change over time? Are there any trends regarding the sighting of extra-terrestrial life that may contribute to potentially skewed data in this set? For example, following the analysis of this data, I'd want to investigate the different attitudes towards UFO sightings during different times in different regions of the US (or world) and potentially use them as a reasoning as to why there may be more or less sightings in a particular region during a particular year. Even among a country like the US, there are many regional differences in what is considered normal or taboo, so I feel like societal and cultural trends would be really interesting to study using data. 
+
+## Code
+
+Appendix of R code file can be viewed in analysis.R.
